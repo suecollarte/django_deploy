@@ -1,0 +1,38 @@
+{% extends 'base_home.html' %}
+{% block title %} Inicio Plataforma Proxima Hora {% endblock%}
+{% load static %}
+
+{% block content %}
+
+
+   {% for project in projects%}
+        <div class="card  cards-noticias ">
+
+
+ 
+
+
+
+            
+
+            <div class="card-body my-3">
+
+                <h5 class=" card-title subtitulo2">{{ project.title }}"</h5>
+                <p class="card-text ms-2 me-2"> {{ project.des }}"
+                </p>
+                
+            </div>
+        </div>
+{% endfor %}
+{% endblock %}
+        
+        
+  
+
+
+
+    </div>
+
+
+
+</section>
